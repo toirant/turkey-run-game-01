@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Turkey Run — The Great Thanksgiving Escape</title>
+<style>
+  html, body {
+    margin: 0; padding: 0; height: 100%;
+    background: #2b1a0e;
+    display: flex; align-items: center; justify-content: center;
+    font-family: "Trebuchet MS", "Segoe UI", Verdana, sans-serif;
+  }
+  #wrap { position: relative; width: min(96vw, 1280px); }
+  canvas {
+    display: block; width: 100%; height: auto;
+    border-radius: 12px;
+    box-shadow: 0 12px 48px rgba(0, 0, 0, 0.6);
+    background: #f7c873;
+    cursor: pointer;
+  }
+  #hint {
+    color: #e8c98f; text-align: center; font-size: 13px;
+    margin-top: 10px; letter-spacing: 0.4px;
+  }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="960" height="540" tabindex="0"></canvas>
+  <div id="hint">Arrows / W S — switch lane &nbsp;·&nbsp; Space / Click — jump &nbsp;·&nbsp; Shift — dash &nbsp;·&nbsp; P — pause &nbsp;·&nbsp; M — mute &nbsp;·&nbsp; R — restart</div>
+</div>
+<script src="src/config.js"></script>
+<script src="src/random.js"></script>
+<script src="src/input.js"></script>
+<script src="src/audio.js"></script>
+<script src="src/world.js"></script>
+<script src="src/turkey.js"></script>
+<script src="src/farmer.js"></script>
+<script src="src/render.js"></script>
+<script src="src/shots.js"></script>
+<script src="src/main.js"></script>
+</body>
+</html>
